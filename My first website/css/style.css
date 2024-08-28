@@ -1,0 +1,222 @@
+body {
+    background-image: url(../Image/clouds.png);
+    background-size: cover;
+    background-color: aqua;
+    margin: 0; /* Remove default margin */
+    font-family: Arial, sans-serif; /* Default font */
+}
+
+.profice-pic-figure img {
+    border-radius: 50%;
+}
+
+#Top {
+    color: #fff; /* White text color */
+    padding: 20px; /* Padding around the header content */
+    text-align: center; /* Center text alignment */
+    font-family: Arial, sans-serif; /* Font styling */
+}
+
+#Top a[href="#Bottom"] {
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold font */
+    display: inline-block; /* Inline block for padding */
+    padding: 5px 10px; /* Padding around the link */
+    border-radius: 5px; /* Rounded corners */
+    margin-bottom: 10px; /* Space below the link */
+}
+#Top nav ul {
+    list-style-type: none; /* Remove default bullet points */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+    display: flex; /* Use flexbox for horizontal alignment */
+    justify-content: center; /* Center the menu items */
+    gap: 20px; /* Space between the menu items */
+}
+
+#Top nav ul li a:hover {
+    border-radius: 5px; /* Rounded corners on hover */
+}
+
+@media (max-width: 600px) {
+    #Top {
+        padding: 10px; /* Reduce padding on smaller screens */
+    }
+
+    #Top nav ul {
+        flex-direction: column; /* Stack menu items vertically */
+        align-items: center; /* Center items in the column */
+        gap: 10px; /* Space between stacked items */
+    }
+
+    #Top nav ul li a {
+        font-size: 16px; /* Slightly smaller font size */
+        padding: 8px 12px; /* Adjust padding for smaller screens */
+    }
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+    padding: 10px;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    top: 0px;
+    left: 100px
+}
+
+h1 {
+    color: #C80060;
+    text-align: center;
+    font-style: italic;
+}
+
+h2 {
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-weight: normal;
+    color: #C80060;
+    margin-top: 0;
+}
+
+p{
+    font-family: monospace;
+    font-size: 1rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* a:visited{
+    color: red;
+}*/
+
+a:hover{
+    color: darkorange
+}
+
+#Bottom {
+    
+    color: blue; /* White text color */
+    padding: 20px; /* Padding around the footer content */
+    text-align: center; /* Center text alignment */
+    font-family: Arial, sans-serif; /* Font styling */
+    
+}
+
+@media (max-width: 600px) {
+}
+    #Bottom {
+        padding: 10px; 
+        font-size: 14px; 
+    }
+
+    #Bottom p {
+        margin: 10px 0; 
+    }
+
+/* Style for the picture element */
+picture {
+    display: block; /* Ensure the picture takes up full width available */
+    max-width: 100%; /* Make the picture responsive */
+    margin: 20px auto; /* Center the picture with auto left/right margin and add vertical spacing */
+    overflow: hidden; /* Ensures rounded corners work properly */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow for a 3D effect */
+}
+
+/* Style for the img element */
+picture img {
+    display: block; /* Remove extra whitespace */
+    max-width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Ensure the image corners match the container */
+}
+
+/* Add a hover effect to the picture */
+picture:hover {
+    transform: scale(1.05); /* Slightly scale the picture on hover */
+    transition: transform 0.3s ease-in-out; /* Smooth transition effect */
+}
+
+/* Add a focus effect for accessibility */
+picture img:focus {
+    outline: none; /* Remove the default focus outline */
+    box-shadow: 0 0 10px #4CAF50; /* Green glow around the image on focus */
+}
+
+/* General styles for headings */
+main {
+    font-family: Arial, sans-serif;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 24px;
+    border-bottom: 2px solid #4CAF50; /* Add a bottom border for separation */
+    padding-bottom: 5px;
+}
+
+/* Style for video element */
+video {
+    display: block;
+    margin: 20px auto; /* Center the video and add vertical space */
+    max-width: 100%; /* Make video responsive */
+    border: 3px solid #4CAF50; /* Green border around video */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+/* Style for audio element */
+audio {
+    display: block;
+    margin: 20px auto; /* Center the audio control */
+    max-width: 100%; /* Make audio control responsive */
+    border: 2px solid #4CAF50; /* Green border around audio */
+    padding: 5px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+/* Style for labels */
+label {
+    display: block;
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Style for images */
+img {
+    display: block;
+    margin: 10px auto; /* Center the images and add vertical space */
+    border: 3px solid #4CAF50; /* Green border around images */
+    border-radius: 10px; /* Rounded corners */
+    max-width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    transition: transform 0.3s ease-in-out; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for images */
+img:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    h2 {
+        font-size: 20px; /* Smaller font size on mobile */
+    }
+    
+    video, audio, img {
+        margin: 10px auto; /* Adjust margins for smaller screens */
+    }
+
+    label {
+        font-size: 14px; /* Slightly smaller font size for labels */
+    }
+}
+  
+  

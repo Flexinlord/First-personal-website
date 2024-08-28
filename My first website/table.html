@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        tfoot {
+            font-weight: bold;
+        }
+    
+    </style>
+</head>
+
+<header id="Top">
+    <a href="#Bottom">To Bottom</a>
+
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home |</a></li>
+            <li><a href="form.html">Application form |</a></li>
+            <li><a href="table.html">Courses |</a></li>
+            <li><a href="media.html">Media Page</a></li>
+        </ul>
+    </nav>
+</header>
+
+<body>
+    <table border="1">
+        <caption><b>AltSchool Programs</b></caption>
+    <thead>
+        <tr>
+            <th>School of Engineering</th>
+            <th>School of Data</th>
+            <th>School of Product</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Frontend</td>
+            <td>Data Engineering</td>
+            <td>Product Design</td>
+        </tr>
+        <tr>
+            <td>Backend</td>
+            <td>Data Science</td>
+            <td>Product Marketing</td>
+        </tr>
+        <tr>
+            <td>Cloud</td>
+            <td>Data Analysis</td>
+            <td>Product Management</td>
+        </tr>
+
+        <tr>
+            <td>Cybersecurity</td>
+            <td></td>
+            <td></td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="3"><b>Total Programs: 10</b></td>
+        </tr>
+    </tfoot>
+</table>
+
+    <footer id="Bottom">
+        <p>&copy; 2024 AltSchool Africa. All rights reserved.</p>
+        <p>Contact us at <a href="mailto:apply@altschoolafrica.com">apply@altschoolafrica.com</a>.</p>
+        <a href="#Top">To Top</a>
+    </footer>
+</body>
+</html>
